@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+
+body{
+    height: 100vh;
+}
+
+.header .navbar{
+    background-color: whitesmoke;
+}
+
+section .allcontent {
+    background-color: lightgrey;
+    border-radius: 5px;
+    
+    
+    
+}
+section .content
+{
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sidebar button{
+    height: 60px;
+    border:none;
+    background-color: whitesmoke;
+}
+
+section div .char{
+    background-color: aqua;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: whitesmoke;
+}
