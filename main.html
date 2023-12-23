@@ -14,16 +14,14 @@
 
     <!-- ------------------------------------------------ start navbar ---------------------------------------------------------- -->
 <header class="header row sticky-top ">
-    <div class="container    ">
         <nav class="navbar navbar-expand-lg  ms-auto  ">
-            <div class="container-fluid">
+            <div class="container-fluid row">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-8">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -43,12 +41,11 @@
                             </a>
                         </li>
                     </ul>
-                    <a class=" logo navbar-brand  col-3" href="#">الصفحة الرئيسية</a>
+                    <a class=" logo navbar-brand  col-4 text-center" href="#"> الرئيسية </a>
 
                 </div>
             </div>
         </nav>
-    </div>
 </header>
 
 
@@ -66,56 +63,43 @@
 
 
 <!--------------------------------------------------------------------section one  start--------------------------------------->
-<section class="content  ">
 
-    <div class="flex-container row  ">
-        <div class="allcontent  col-10  mt-2 pt-5">
-            <div class=" content row   gap-5   justify-content-center">
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-            </div>
+<section class="flex-container row">
 
 
-            <div class=" content row   gap-5 justify-content-center">
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-            </div>
+    <div class="centercontent col-10">
 
 
-            <div class=" content row   gap-5  justify-content-center">
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-                <div class=" char col-3  text-center">welcome </div>
-            </div>
-        </div>
-
+    </div>
+    
+    
 
 
 
     <!------------start side bar------------------>
-
-    <div class=" sidebar list-group col-2   text-end ">
-        <div class="list-group mt-3">
-            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-              الصفحة الرئيسية 
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">القضايا </a>
-            <a href="#" class="list-group-item list-group-item-action">العملاء </a>
-            <a href="#" class="list-group-item list-group-item-action">الفواتير </a>
-            <a href="#" class="list-group-item list-group-item-action">الاستشارات </a>
-            <a href="#" class="list-group-item list-group-item-action">التقويم </a>
-            <a href="#" class="list-group-item list-group-item-action">الحسابات المالية</a>
-            <a href="#" class="list-group-item list-group-item-action">مهام المكتب </a>
-            <a href="#" class="list-group-item list-group-item-action">الموظفين </a>
-            <a href="#" class="list-group-item list-group-item-action">اعدادات العمل</a>
-            <a class="list-group-item list-group-item-action" href="#"> الاعدادات العامة</a>
-          </div>
+    
+        <div class=" sidebar list-group col-2   text-end ">
+            <div class="list-group ">
+                <a href="#" class="list-group-item list-group-item-action">الرئيسية<i class="fa-solid fa-house-user ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">القضايا<i class="fa-solid fa-gavel ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">العملاء<i class="fa-solid fa-user ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">الفواتير<i class="fa-solid fa-clipboard-list ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">الاستشارات<i class="fa-solid fa-list-check ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">التقويم<i class="fa-solid fa-calendar-days ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">الحسابات المالية<i class="fa-solid fa-money-bill-wave ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">مهام المكتب<i class="fa-solid fa-layer-group ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">الموظفين<i class="fa-solid fa-briefcase ps-3"></i></a>
+                <a href="#" class="list-group-item list-group-item-action">اعدادات العمل<i class="fa-solid fa-briefcase ps-3"></i></a>
+                <a class="list-group-item list-group-item-action" href="#"> الاعدادات العامة<i class="fa-solid fa-sliders ps-3"></i></a>
+              </div>
+            
+        </div>
         
-    </div>
+    
+    
     <!--------------- end sidebar---------------->
-</div>
+
+
 </section>
 <!--------------------------------------------------------------------section one  end  --------------------------------------->
 
@@ -130,7 +114,7 @@
 
 <!--------------------------------------------------------------------start footer  ------------------------------------------->
 
-<footer>
+<!--<footer>
     <div class="container row pt-6">
         <div class="foocontent col-4 ms-2 text-start">
             <h4 class="uppercase">lawyer</h4>
@@ -144,7 +128,7 @@
 
 
     </div>
-</footer>
+</footer>-->
 
 
 <!--------------------------------------------------------------------end footer  --------------------------------------------->
