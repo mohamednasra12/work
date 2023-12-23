@@ -25,7 +25,6 @@ section .allcontent {
 section .content
 {
     margin-top: 15px;
-    margin-right: 10px;
     margin-left: 10px;
 }
 
@@ -50,6 +49,6 @@ section div .char{
 
 footer{
     width: 100%;
-    height: 120px;
+    height: 20px;
     background-color: whitesmoke;
 }
