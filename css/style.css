@@ -29,7 +29,7 @@ section .content
 }
 
 .sidebar{
-    height: calc(100vh );
+    height: 150vh;
     background-color: whitesmoke;
 }
 .sidebar a{
