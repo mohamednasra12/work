@@ -39,7 +39,7 @@ section .content
 }
 
 section div .char{
-    background-color: aqua;
+    background-color: whitesmoke;
     height: 150px;
     border: 2px solid black;
     border-radius: 10px;
