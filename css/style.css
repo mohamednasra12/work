@@ -1,49 +1,75 @@
 *{
-    margin: 0;
-    padding: 0;
     --maincolor:whitesmoke;
     --hover: #ffe8cb;
     --font:#A6702E;
+    
     
 }
 
 
 
 body{
-    height: 100vh;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
     
 }
 
-.header .navbar{
+.navbar{
     background-color: whitesmoke;
     height: 45px;
     width: 100%;
 }
-.header .navbar .logo{
-    margin-right: 200px;
+.navbar .logo{
+    font-weight: 900;
 }
-.header .navbar ul li :hover{
+.navbar ul li :hover{
     background-color: var(--hover);
     color: var(--font);
 }
 
-section{
-    height: 100vh;
-}
-section .centercontent {
-    height: 200px;
-}
 section .sidebar{
-    height: 100vh;
+    height: 200vh;
     background-color: var(--maincolor);
+    position: absolute;
+    right: 0;
+    width: 20%;
+    
 }
 
 section .sidebar a{
     background-color: var(--maincolor);
     border: none;
     border-radius: none;
+    font-weight: 600;
 }
 section .sidebar  :hover {
     background-color: var(--hover);
     color: var(--font);
+}
+.maincontent{
+    display: grid;
+    justify-content: space-evenly;
+    position: relative;
+    
+    
+}
+.leftcount{
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: var(--maincolor);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    left: 30px;
+    top: 30px;
+    
+    
+
+}
+.chart{
+    border-radius: 10%;
+    border: 1px solid black;
+    height: 200px;
+    
 }
