@@ -1,5 +1,5 @@
 *{
-    --maincolor:whitesmoke;
+    --maincolor:rgb(255, 255, 255);
     --hover: #ffe8cb;
     --font:#A6702E;
     
@@ -16,7 +16,7 @@ body{
 }
 
 .navbar{
-    background-color: whitesmoke;
+    background-color: var(--maincolor);
     height: 45px;
     width: 100%;
 }
@@ -69,8 +69,27 @@ section .sidebar  :hover {
 
 }
 .chart{
-    border-radius: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.chart1 , .chart2 , .chart3{
+    border-radius: 5%;
     border: 1px solid black;
-    height: 200px;
+    height: 120px;
     
+    
+}
+.chart4{
+    height: 550px;
+}
+.chart5 , .chart6{
+ height: 500px;
+ margin: 10px 0 10px 0;
+ border-radius: 5px;
+}
+.chart2{
+    border: 1px solid black;
+    border-radius: 5px;
 }
