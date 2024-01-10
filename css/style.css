@@ -88,6 +88,7 @@
 
 .sidebar .side a {
     background-color: var(--maincolor);
+    color: var(--font);
     width: 150px;
     display: flex;
     justify-content: end;
@@ -142,7 +143,6 @@
 }
 .four{
     grid-area: four;
-    background-color: rgb(120, 90, 186);
     height: 350px;
     
 }
@@ -157,22 +157,35 @@
 }
 .seven{
     grid-area: seven;
-    background-color: rgb(120, 90, 186);
-    height: 100%;
+    height: 200px;
     
     
 }
 .container .char{
-    background-color: rgb(120, 90, 186);
     border: 1px solid white;
-    border-radius: 10px;
     width: 320px;
-    height: 159px;
+    height: 120px;
     margin-top: 15px;
-    
+    gap: 10px;
 }
 .char2{
-    background-color: rgb(255, 136, 0);
-    border-radius: 10px solid black;
+    height: 150px;
+}
+.topimg{
     height: 100%;
+    width: 100%;
+    border: 1px solid var(--hover);
+    border-radius: 5px;
+}
+.topim{
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--hover);
+    border-radius: 5px; 
+}
+.container .char .topim:hover{
+    background-color: var(--hover);
+    
+
+
 }
