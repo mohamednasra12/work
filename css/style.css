@@ -1,95 +1,177 @@
-*{
-    --maincolor:rgb(255, 255, 255);
-    --hover: #ffe8cb;
-    --font:#A6702E;
-    
-    
-}
-
-
-
-body{
-    height: 200vh;
+* {
     margin: 0;
     padding: 0;
+    --maincolor: rgb(255, 255, 255);
+    --hover: #ffe8cb;
+    --font: #A6702E;
+    --content-color:rgb(226, 226, 226);
+
+}
+
+.allcontent {
+    display: grid;
+    text-align: center;
+    grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "cont cont cont cont cont cont cont cont cont cont cont side"
+        "foot foot foot foot foot foot foot foot foot foot foot foot"
+    ;
+
+}
+
+.nav {
+    background-color: aquamarine;
+    grid-area: nav;
+}
+
+.content {
+    background-color:var(--content-color);
+    grid-area: cont;
+    position: relative;
+    width: 104%;
     
 }
 
-.navbar{
+.sidebar {
+    background-color: var(--maincolor);
+    grid-area: side;
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    }
+
+.footer {
+    background-color:var(--content-color);
+    grid-area: foot;
+    height: 20px;
+}
+
+/*-------------------------------sidebar css-------------------------------------------------*/
+.navbar {
     background-color: var(--maincolor);
     height: 45px;
     width: 100%;
 }
-.navbar .logo{
+
+.navbar .logo {
     font-weight: 900;
-    padding-right: 50px;
-}
-.navbar ul li :hover{
-    background-color: var(--hover);
-    color: var(--font);
-}
-
-section .sidebar{
-    height: 200vh;
-    background-color: var(--maincolor);
     position: absolute;
-    right: 0;
     width: 20%;
-    
+    right: 100px;
 }
 
-section .sidebar a{
-    background-color: var(--maincolor);
-    border: none;
-    border-radius: none;
-    font-weight: 600;
+.navbar-nav {
+    position: absolute;
+    left: 20px;
+    width: 80%;
 }
-section .sidebar  :hover {
+
+.navbar ul li :hover {
     background-color: var(--hover);
     color: var(--font);
-}
-.maincontent{
-    display: grid;
-    justify-content: space-evenly;
-    position: relative;
-    
-    
-}
-.leftcount{
-    position: absolute;
-    border-radius: 20px;
-    border: 1px solid black;
-    background-color: var(--maincolor);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    left: 10px;
-    top: 20px;
-    
-    
 
 }
-.chart{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+
+/*-------------------------------sidebar css-------------------------------------------------*/
+.sidebar .side {
+    height: 100vh;
+    background-color: var(--maincolor);
 }
-.chart1 , .chart2 , .chart3{
-    border-radius: 5%;
-    border: 1px solid black;
-    height: 120px;
-    
-    
+
+
+.sidebar .side a {
+    background-color: var(--maincolor);
+    width: 150px;
+    display: flex;
+    justify-content: end;
+    left: 20px;
+    border: 0;
+    font-weight: 600;
+    font-size: small;
+    padding-top: 10px;
 }
-.chart4{
-    height: 550px;
-}
-.chart5 , .chart6{
- height: 500px;
- margin: 10px 0 10px 0;
- border-radius: 5px;
-}
-.chart2{
-    border: 1px solid black;
+
+.sidebar .side .hang :hover {
+    background-color: var(--hover);
+    color: var(--font);
     border-radius: 5px;
+
+}
+/*---------------------content----------------------------------------*/
+.allcontent .container{
+    display: grid;
+    gap: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    width: 97%;
+    height: 96%;
+    left: 15px;
+    top: 20px;
+    border-radius: 10px;
+    background-color: var(--maincolor);
+    justify-content: center;
+    align-items: start;
+    align-content: start;
+    padding-bottom: 20px;
+    grid-template-areas:
+    "one one two two three three"
+    "four four five sex sex sex "
+    "four four seven seven seven seven "
+    "four four seven seven seven seven"
+    ;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+    
+    
+}
+.three{
+    grid-area: three;
+    
+    
+}
+.four{
+    grid-area: four;
+    background-color: rgb(120, 90, 186);
+    height: 350px;
+    
+}
+.five{
+    grid-area: five;
+    width: 200px;
+    
+}
+.sex{
+    grid-area: sex;
+    width: 100%;
+}
+.seven{
+    grid-area: seven;
+    background-color: rgb(120, 90, 186);
+    height: 100%;
+    
+    
+}
+.container .char{
+    background-color: rgb(120, 90, 186);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 320px;
+    height: 159px;
+    
+}
+.char2{
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px solid black;
+    height: 100%;
 }
